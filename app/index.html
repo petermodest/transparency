@@ -46,19 +46,20 @@
         <img src="images/np-close-1076053-ffffff.svg">
       </button>
     </div>
-    <header class="main-header">
+    <header class="main-header mobile-no-bar">
       <img src="images/logo.png" srcset="images/logo@2x.png 2x, images/logo@3x.png 3x" alt="">
-      <nav>
+      <nav class="">
         <a href="#">Projects</a>
         <a href="#">Researchers & Physicians</a>
         <a href="#">Patients & Families</a>
         <a href="#">Partners</a>
-        <a href=""></a>
+        <a href="">About Us</a>
+        <a href="#">
+          Sign in or Join
+          <img src="images/arrow.png" srcset="images/arrow@2x.png 2x, images/arrow@3x.png 3x" alt="">
+        </a>
       </nav>
-      <a href="#">
-        Sign in or Join
-        <img src="images/arrow.png" srcset="images/arrow@2x.png 2x, images/arrow@3x.png 3x" alt="">
-      </a>
+      <button type="button" class="hamburger" onclick="toggleMenu()"></button>
     </header>
   </div>
 
@@ -74,30 +75,35 @@
       </div>
     </div>
 
-    <div class="top-section__blocks">
-      <div>
-        <a href="#">Researchers & Physicians</a>
-      </div>
-      <div>
-        <a href="#">Patients & Families</a>
-      </div>
-      <div>
-        <a href="#">Partners</a>
+    <div class="container">
+      <div class="top-section__blocks">
+        <div>
+          <a href="#">Researchers & Physicians</a>
+        </div>
+        <div>
+          <a href="#">Patients & Families</a>
+        </div>
+        <div>
+          <a href="#">Partners</a>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="info-block1 container">
-    <div class="col-md-6" data-aos="fade-right">
-      <h4>The world’s first <bold>digital</bold> drug development services company</h4>
-      <p class="paragraph">Transparency Life Sciences is the first all-digital clinical development services company. Our crowdsourcing software and mobile health technology advance drug candidates through clinical trials with unprecedented patient relevance, efficiency and affordability.</p>
-      <a href="#">View News</a>
-    </div>
-    <div class="col-md-6" data-aos="fade-left">
-      <img src="images/icon-1.svg" alt="">
-      <img src="images/icon-2.svg" alt="">
-      <img src="images/icon-3.png" srcset="images/icon-3@2x.png 2x, images/icon-3@3x.png 3x" alt="">
-      <img src="images/icon-4.svg" alt="">
+
+  <div class="container">
+    <div class="info-block1">
+      <div class="col-md-6" data-aos="fade-right">
+        <h4>The world’s first <bold>digital</bold> drug development services company</h4>
+        <p class="paragraph">Transparency Life Sciences is the first all-digital clinical development services company. Our crowdsourcing software and mobile health technology advance drug candidates through clinical trials with unprecedented patient relevance, efficiency and affordability.</p>
+        <a href="#">View News</a>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="images/icon-1.svg" alt="">
+        <img src="images/icon-2.svg" alt="">
+        <img src="images/icon-3.png" srcset="images/icon-3@2x.png 2x, images/icon-3@3x.png 3x" alt="">
+        <img src="images/icon-4.svg" alt="">
+      </div>
     </div>
   </div>
 
@@ -144,7 +150,7 @@
     <h4>Transparency Product Suite</h4>
     <p class="paragraph">Our platform is an all-digital solution that develops the right drugs with the right labels, and runs successful clinical trials with faster timelines and smaller budgets.</p>
     <div>
-      <div class="info-block2__row">
+      <div class="info-block2__block" data-aos="fade-up">
         <img src="images/np-chat-888687-000000.png"
              srcset="images/np-chat-888687-000000@2x.png 2x,
          images/np-chat-888687-000000@3x.png 3x">
@@ -154,7 +160,7 @@
           Our online, crowdsourced approach to clinical protocol design, helps craft clinical study protocols for real-world medical needs, co-designed by patients and their physicians
         </p>
       </div>
-      <div class="info-block2__block">
+      <div class="info-block2__block" data-aos="fade-up">
         <img src="images/np-telemedicine-638915-ffffff.png"
              srcset="images/np-telemedicine-638915-ffffff@2x.png 2x,
 					 images/np-telemedicine-638915-ffffff@3x.png 3x">
@@ -163,7 +169,7 @@
           Uses our patented telemedicine, mobile health, and cloud platforms to run simpler trials for everyone, resulting in cheaper, faster delivery
         </p>
       </div>
-      <div class="info-block2__block">
+      <div class="info-block2__block" data-aos="fade-up">
         <img src="images/np-report-942715-000000.png"
              srcset="images/np-report-942715-000000@2x.png 2x,
 					 images/np-report-942715-000000@3x.png 3x">
@@ -174,7 +180,7 @@
     </div>
   </div>
 
-  <div class="info-block3 container">
+  <div class="info-block3 container no-mobile">
     <h4>Trusted for unparalleled relevance and efficiency</h4>
     <div>
       <img src="images/image-1.jpg"
@@ -219,8 +225,37 @@
       </div>
     </div>
   </div>
+  <div class="info-block3 mobile">
+    <div class="container">
+      <h4>Trusted for unparalleled relevance and efficiency</h4>
+      <div class="info-block3__slider">
+        <div class="info-block3__slide info-block3__slide__active" id="slide3-1">
+          <p class="paragraph">
+            “Transparency Life Sciences is the first all-digital clinical development services company. It harnesses crowdsourcing software and mobile health technology to advance drug candidates through clinical trials with unprecedented patient relevance and efficiency. It harnesses crowdsourcing software.”
+            “Transparency Life Sciences is the first all-digital clinical development services company. It harnesses crowdsourcing software and mobile health technology to advance drug candidates through clinical trials with unprecedented patient relevance and efficiency. It harnesses crowdsourcing software.”
+          </p>
+        </div>
+        <div class="info-block3__slide" id="slide3-2">
+          <p class="paragraph">
+            “Transparency Life Sciences is the first all-digital clinical development services company. It harnesses crowdsourcing software and mobile health technology to advance drug candidates through clinical trials with unprecedented patient relevance and efficiency. It harnesses crowdsourcing software.”
+            “Transparency Life Sciences is the first all-digital clinical development services company. It harnesses crowdsourcing software and mobile health technology to advance drug candidates through clinical trials with unprecedented patient relevance and efficiency. It harnesses crowdsourcing software.”
+          </p>
+        </div>
+        <div class="info-block3__slide" id="slide3-3">
+          <p class="paragraph">
+            “Transparency Life Sciences is the first all-digital clinical development services company. It harnesses crowdsourcing software and mobile health technology to advance drug candidates through clinical trials with unprecedented patient relevance and efficiency. It harnesses crowdsourcing software.”
+          </p>
+        </div>
+      </div>
+      <div class="info-block3__buttons">
+        <button type="button" name="button" class="info-block3__button info-block3__buttons__active" onclick="changeSlide3(1)" id="btn3-1"></button>
+        <button type="button" name="button" class="info-block3__button" onclick="changeSlide3(2)" id="btn3-2"></button>
+        <button type="button" name="button" class="info-block3__button" onclick="changeSlide3(3)" id="btn3-3"></button>
+      </div>
+    </div>
+  </div>
 
-  <div class="slider__wrapper container-fluid">
+  <div class="slider__wrapper container-fluid no-mobile">
     <div class="container">
       <div class="slider">
         <div class="slider-btn" id="slide0">
@@ -251,27 +286,27 @@
     </div>
   </div>
 
-  <div class="slide slide0">
+  <div class="slide slide0 no-mobile">
     <h6>2012</h6>
     <h4>First IND Approved by FDA</h4>
     <p class="paragraph">The FDA cleared an IND approval for a crowdsourced protocol, marking an industry first. Later this year TLS began its collaboration with Genentech and Brigham and Women’s Hospital on a study of ulcerative colitis.</p>
   </div>
-  <div class="slide slide1 slide__active">
+  <div class="slide slide1 slide__active no-mobile">
     <h6>2013</h6>
     <h4>First IND Approved by FDA</h4>
     <p class="paragraph">The FDA cleared an IND approval for a crowdsourced protocol, marking an industry first. Later this year TLS began its collaboration with Genentech and Brigham and Women’s Hospital on a study of ulcerative colitis.</p>
   </div>
-  <div class="slide slide2">
+  <div class="slide slide2 no-mobile">
     <h6>2014</h6>
     <h4>First IND Approved by FDA</h4>
     <p class="paragraph">The FDA cleared an IND approval for a crowdsourced protocol, marking an industry first. Later this year TLS began its collaboration with Genentech and Brigham and Women’s Hospital on a study of ulcerative colitis.</p>
   </div>
-  <div class="slide slide3">
+  <div class="slide slide3 no-mobile">
     <h6>2015</h6>
     <h4>First IND Approved by FDA</h4>
     <p class="paragraph">The FDA cleared an IND approval for a crowdsourced protocol, marking an industry first. Later this year TLS began its collaboration with Genentech and Brigham and Women’s Hospital on a study of ulcerative colitis.</p>
   </div>
-  <div class="slide slide4">
+  <div class="slide slide4 no-mobile">
     <h6>2016</h6>
     <h4>First IND Approved by FDA</h4>
     <p class="paragraph">The FDA cleared an IND approval for a crowdsourced protocol, marking an industry first. Later this year TLS began its collaboration with Genentech and Brigham and Women’s Hospital on a study of ulcerative colitis.</p>
@@ -280,36 +315,37 @@
   <section class="circle">
     <div class="container">
       <div class="info-block4">
-        <div><h4>Project <span>Highlights</span></h4><a href="#">View all projects &nbsp;&rarr;</a></div>
+        <div><h4>Project <span>Highlights</span></h4><a href="#" class="no-mobile">View all projects &nbsp;&rarr;</a></div>
         <p class="paragraph">Browse below to find a Protocol Builder to participate in, or to see if a study you’re interested in is enrolling. </p>
-        <div>
+        <a href="#" class="mobile">All Projects</a>
+        <div data-aos="fade-up">
           <div class="col-md-3">
             <img src="images/section-oncology.png"
                  srcset="images/section-oncology@2x.png 2x,
 					 images/section-oncology@3x.png 3x">
             <span>Kiacta in Sarcoidosis, Part II</span>
-            <a href="#">View Project</a>
+            <a href="#" class="no-mobile">View Project</a>
           </div>
           <div class="col-md-3">
             <img src="images/section-autoimmunity.png"
                  srcset="images/section-autoimmunity@2x.png 2x,
 					 images/section-autoimmunity@3x.png 3x">
             <span>Lisinopril in Multiple Sclerosis</span>
-            <a href="#">View Project</a>
+            <a href="#" class="no-mobile">View Project</a>
           </div>
           <div class="col-md-3">
             <img src="images/section-gastro.png"
                  srcset="images/section-gastro@2x.png 2x,
 					 images/section-gastro@3x.png 3x">
             <span>Telemedicine Acceptance in IBD</span>
-            <a href="#">View Project</a>
+            <a href="#" class="no-mobile">View Project</a>
           </div>
           <div class="col-md-3">
             <img src="images/section-oncology.png"
                  srcset="images/section-oncology@2x.png 2x,
 					 images/section-oncology@3x.png 3x">
             <span>Metformin in Prostate Cancer</span>
-            <a href="#">View Project</a>
+            <a href="#" class="no-mobile">View Project</a>
           </div>
         </div>
       </div>
@@ -366,8 +402,11 @@
 
     function closeBar() {
       const bar = document.getElementById('bar');
+      const nav = document.getElementsByTagName('nav')[0];
       bar.classList.toggle('active');
+      nav.classList.add('mobile-no-bar');
     }
+
     function changeSlide(name) {
       const slides = document.getElementsByClassName('slider-btn');
       const slidesText = document.getElementsByClassName('slide');
@@ -381,6 +420,29 @@
       slide.classList.add('slider-active');
       const slideText = document.getElementsByClassName(name)[0];
       slideText.classList.add('slide__active');
+    }
+
+    function toggleMenu() {
+      const nav = document.getElementsByTagName('nav')[0];
+      nav.classList.toggle('nav-active');
+    }
+
+    function changeSlide3(id) {
+      const slide = document.getElementById('slide3-' + id);
+      const slides = document.getElementsByClassName('info-block3__slide');
+      const button = document.getElementById('btn3-' + id);
+      const buttons = document.getElementsByClassName('info-block3__button');
+
+      for (var i = 0; i < buttons.length; i++) {
+        slides[i].classList.remove('info-block3__slide__active');
+      }
+
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('info-block3__buttons__active');
+      }
+
+      slide.classList.add('info-block3__slide__active');
+      button.classList.add('info-block3__buttons__active');
     }
   </script>
 <!-- build:js scripts/main.min.js -->
