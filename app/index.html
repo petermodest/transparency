@@ -64,32 +64,26 @@
   </div>
 
   <div class="top-section">
-    <img src="images/nick-jio-205050.jpg"
-         srcset="images/nick-jio-205050@2x.jpg 2x,
-					 images/nick-jio-205050@3x.jpg 3x">
-
-    <div class="container">
-      <div class="center">
-        <h1>Experience the Future of Clinical Trials Now</h1>
-        <p>Patient convenience and our cloud-based platform give sponsors optimized trials with better results at lower cost.</p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="top-section__blocks">
-        <div>
-          <a href="#">Researchers & Physicians</a>
+    <div class="top-section__bg">
+      <div class="container">
+        <div class="center">
+          <h1>Experience the Future of Clinical Trials Now</h1>
+          <p>Patient convenience and our cloud-based platform give sponsors optimized trials with better results at lower cost.</p>
         </div>
-        <div>
-          <a href="#">Patients & Families</a>
-        </div>
-        <div>
-          <a href="#">Partners</a>
+        <div class="top-section__blocks">
+          <div>
+            <a href="#">Researchers & Physicians</a>
+          </div>
+          <div>
+            <a href="#">Patients & Families</a>
+          </div>
+          <div>
+            <a href="#">Partners</a>
+          </div>
         </div>
       </div>
+      </div>
     </div>
-  </div>
-
 
   <div class="container">
     <div class="info-block1">
@@ -99,10 +93,7 @@
         <a href="#">View News</a>
       </div>
       <div class="col-md-6" data-aos="fade-left">
-        <img src="images/icon-1.svg" alt="">
-        <img src="images/icon-2.svg" alt="">
-        <img src="images/icon-3.png" srcset="images/icon-3@2x.png 2x, images/icon-3@3x.png 3x" alt="">
-        <img src="images/icon-4.svg" alt="">
+        <img src="images/intro-graphic.svg">
       </div>
     </div>
   </div>
@@ -183,9 +174,9 @@
   <div class="info-block3 container no-mobile">
     <h4>Trusted for unparalleled relevance and efficiency</h4>
     <div>
-      <img src="images/image-1.jpg"
-           srcset="images/image-1@2x.jpg 2x,
-					 images/image-1@3x.jpg 3x"
+      <img src="images/image-1.png"
+           srcset="images/image-1@2x.png 2x,
+					 images/image-1@3x.png 3x"
            data-aos="fade-right">
       <div class="info-block3__row">
         <p class="paragraph">
@@ -205,15 +196,15 @@
           - AC Slater, Lead Scientist, Genzyme
         </p>
       </div>
-      <img src="images/image-2.jpg"
-           srcset="images/image-2@2x.jpg 2x,
-					 images/image-2@3x.jpg 3x"
+      <img src="images/image-2.png"
+           srcset="images/image-2@2x.png 2x,
+					 images/image-2@3x.png 3x"
            data-aos="fade-left">
     </div>
     <div>
-      <img src="images/image-3.jpg"
-           srcset="images/image-3@2x.jpg 2x,
-					 images/image-3@3x.jpg 3x"
+      <img src="images/image-3.png"
+           srcset="images/image-3@2x.png 2x,
+					 images/image-3@3x.png 3x"
            data-aos="fade-right">
       <div class="info-block3__row">
         <p class="paragraph">
@@ -396,7 +387,7 @@
    </div>
   </section>
 
-  <script src="scripts/aos.js"></script>
+  <script src="aos.js"></script>
   <script>
     AOS.init();
 
@@ -405,6 +396,14 @@
       const nav = document.getElementsByTagName('nav')[0];
       bar.classList.toggle('active');
       nav.classList.add('mobile-no-bar');
+
+      const topSection = document.getElementsByClassName('top-section')[0];
+
+      if (window.innerWidth > 1100) {
+        topSection.style.marginTop = '96px';
+      } else {
+        topSection.style.marginTop = '50px';
+      }
     }
 
     function changeSlide(name) {

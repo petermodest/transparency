@@ -203,18 +203,13 @@ h4 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 96px;
+  margin-top: 132px;
 
-  & > div:first-of-type {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-  }
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
+  &__bg {
+    width: 100%;
+    background-image: url('../images/nick-jio-205050.jpg');
+    background-size: cover;
+  	height: 580px;
   }
 
   .center {
@@ -222,6 +217,9 @@ h4 {
     flex-direction: column;
     max-width: 500px;
     margin-bottom: 45px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 
     h1 {
       filter: blur(0);
@@ -278,6 +276,11 @@ h4 {
 /* INfo block 1 */
 .info-block1 {
   padding: 75px 0 190px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
   a {
     width: 172px;
@@ -304,25 +307,9 @@ h4 {
   & > div:last-child {
     position: relative;
     img {
-      position: absolute;
-
-      &:nth-child(1) {
-        top: 140px;
-        left: 0;
-      }
-
-      &:nth-child(2) {
-        top: 30px;
-        left: 190px;
-      }
-      &:nth-child(3) {
-        top: 170px;
-        left: 205px
-      }
-      &:nth-child(4) {
-        top: 295px;
-        left: 188px;
-      }
+      width: 510px;
+    	height: 457px;
+    	object-fit: contain;
     }
   }
 }
@@ -557,6 +544,14 @@ h4 {
   opacity: 0;
   transform: translateX(2000px);
   position: absolute;
+
+  h6 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.88;
+    text-align: center;
+    color: #565656;
+  }
 
   & > p {
     max-width: 600px;
@@ -946,7 +941,7 @@ footer {
 
 //  top section
 .top-section {
-  margin-top: 50px;
+  margin-top: 79px;
   z-index: 100;
   justify-content: center;
 
@@ -954,13 +949,21 @@ footer {
     z-index: 100;
   }
 
-  & > div:first-of-type {
+  .center {
     position: static;
     transform: translate(0, 0);
   }
 
   & > div {
     margin: 0;
+  }
+
+  &__bg {
+    & > div {
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+    }
   }
 
   .center {
@@ -1012,6 +1015,7 @@ footer {
 .info-block1 {
   flex-direction: column;
   margin-bottom: 100px;
+  padding-bottom: 0;
   width: 100%;
 
   & > div {
@@ -1029,7 +1033,11 @@ footer {
       }
     }
     &:last-child {
-      height: 270px;
+      margin-top: 20px;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }
