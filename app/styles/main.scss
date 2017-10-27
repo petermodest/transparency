@@ -563,8 +563,27 @@ h4 {
   }
 
   90% {
-
     transform: translate3d(-5px, 0, 0);
+  }
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    opacity: 1;
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
   }
 }
 .slide {
@@ -591,6 +610,12 @@ h4 {
 
   &__active {
     animation: bounceInRight .4s ease-in-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &__active-left {
+    animation: bounceInLeft .4s ease-in-out;
     opacity: 1;
     transform: translateX(0);
   }

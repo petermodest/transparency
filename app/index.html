@@ -425,16 +425,31 @@
     function changeSlide(name) {
       const slides = document.getElementsByClassName('slider-btn');
       const slidesText = document.getElementsByClassName('slide');
+      let prev;
+      let current = parseInt(name[name.length - 1], 10);
+
       for (let i=0; i < slides.length; i++) {
         slides[i].classList.remove('slider-active');
       }
       for (let i=0; i < slidesText.length; i++) {
-        slidesText[i].classList.remove('slide__active');
+        if (
+          slidesText[i].classList.contains('slide__active-left')
+          ||
+          slidesText[i].classList.contains('slide__active')
+          ) {
+          prev = i;
+          slidesText[i].classList.remove('slide__active');
+          slidesText[i].classList.remove('slide__active-left');
+        }
       }
       const slide = document.getElementById(name);
       slide.classList.add('slider-active');
       const slideText = document.getElementsByClassName(name)[0];
-      slideText.classList.add('slide__active');
+      if (current > prev) {
+        slideText.classList.add('slide__active');
+      } else {
+        slideText.classList.add('slide__active-left');
+      }
     }
 
     function toggleMenu() {
