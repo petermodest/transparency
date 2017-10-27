@@ -549,41 +549,36 @@ h4 {
 
 @keyframes bounceInRight {
   0% {
-    opacity: 0;
     transform: translate3d(3000px, 0, 0);
   }
 
-  60% {
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    opacity: 1;
-    transform: translate3d(10px, 0, 0);
-  }
+  // 60% {
+  //   transform: translate3d(-25px, 0, 0);
+  // }
+  //
+  // 75% {
+  //   opacity: 1;
+  //   transform: translate3d(10px, 0, 0);
+  // }
 
   90% {
-    transform: translate3d(-5px, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes bounceInLeft {
   0% {
-    opacity: 0;
+    opacity: 1;
     transform: translate3d(-3000px, 0, 0);
   }
 
-  60% {
-    transform: translate3d(25px, 0, 0);
-  }
+  // 75% {
+  //   opacity: 1;
+  //   transform: translate3d(-10px, 0, 0);
+  // }
 
-  75% {
-    opacity: 1;
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  90% {
-    transform: translate3d(5px, 0, 0);
+  100% {
+    transform: translate3d(0, 0, 0);
   }
 }
 .slide {
@@ -591,7 +586,7 @@ h4 {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
   transform: translateX(2000px);
   position: absolute;
 
